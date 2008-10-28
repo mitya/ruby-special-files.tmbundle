@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: schema.rb tables</string>
+	<key>scope</key>
+	<string>meta.activerecord.schema.create-table</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/^\s*(create_table)\s+['"](.+)['"].*$/$1 :$2/</string>
+	</dict>
+	<key>uuid</key>
+	<string>4257B963-143C-4425-8E9A-0BE6F7C0F6BA</string>
+</dict>
+</plist>
