@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Symbol List: Rakefile namespaces</string>
+	<key>scope</key>
+	<string>source.ruby.rakefile.namespace</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/namespace\s*\(?\s*[:'"]?(\w+)[:'"]?\s*\)?\s*(do|{)/namespace $1/</string>
+	</dict>
+	<key>uuid</key>
+	<string>D3C2CE87-29BD-4AD0-B632-8EF9801CA791</string>
+</dict>
+</plist>

@@ -4,7 +4,8 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>schema.rb</string>
+		<string>rake</string>
+		<string>Rakefile</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)^
@@ -43,24 +44,24 @@
 		|   ^=end
 		)</string>
 	<key>name</key>
-	<string>Ruby schema.rb</string>
+	<string>Ruby Rakefile</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(add_index)\b</string>
-			<key>beginCaptures</key>
+			<string>namespace</string>
+			<key>end</key>
+			<string>(do|{)</string>
+			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.rails</string>
+					<string>keyword.control.ruby</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>$</string>
 			<key>name</key>
-			<string>meta.activerecord.schema.add-index</string>
+			<string>source.ruby.rakefile.namespace</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -71,27 +72,19 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(create_table)\b</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.rails</string>
-				</dict>
-			</dict>
+			<string>task</string>
 			<key>end</key>
-			<string>\b(do).*$</string>
+			<string>(do)|({)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.start-block.ruby.rspec</string>
+					<string>keyword.control.ruby</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.activerecord.schema.create-table</string>
+			<string>source.ruby.rakefile.task</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -106,8 +99,8 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.ruby.rails.schema</string>
+	<string>source.ruby.rakefile</string>
 	<key>uuid</key>
-	<string>1676D27A-49ED-416E-8EC2-E2892FF4AC21</string>
+	<string>FD861164-D42D-43B7-8F3B-8DBFB3963B66</string>
 </dict>
 </plist>
