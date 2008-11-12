@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Symbol List: Rakefile tasks</string>
+	<string>Symbol List: Capfile namespaces</string>
 	<key>scope</key>
-	<string>source.ruby.rakefile.task, source.ruby.capfile.task</string>
+	<string>source.ruby.capfile.namespace</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
 		<integer>1</integer>
 		<key>symbolTransformation</key>
-		<string>s/task[\s:'"(]+(\w+)[\s:'"=)]?(.*)/   task $1/</string>
+		<string>s/namespace\s*\(?\s*[:'"]?(\w+)[:'"]?\s*\)?\s*(do|{)/namespace $1/</string>
 	</dict>
 	<key>uuid</key>
-	<string>4CAC0FCE-196D-44D3-BEBC-A3D84E047DB8</string>
+	<string>3EA8FC3F-115C-4DA5-B05D-3F1206523C36</string>
 </dict>
 </plist>

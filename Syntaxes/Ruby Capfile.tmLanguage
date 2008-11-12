@@ -4,7 +4,7 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>schema.rb</string>
+		<string>Capfile</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>(?x)^
@@ -45,24 +45,24 @@
 	<key>keyEquivalent</key>
 	<string>^~R</string>
 	<key>name</key>
-	<string>Ruby schema.rb</string>
+	<string>Ruby Capfile</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(add_index)\b</string>
-			<key>beginCaptures</key>
+			<string>namespace</string>
+			<key>end</key>
+			<string>(do|{)</string>
+			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.rails</string>
+					<string>keyword.control.ruby</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>$</string>
 			<key>name</key>
-			<string>meta.activerecord.schema.add-index</string>
+			<string>source.ruby.capfile.namespace</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -73,27 +73,34 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(create_table)\b</string>
-			<key>beginCaptures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.other.rails</string>
-				</dict>
-			</dict>
+			<string>^\s*set</string>
 			<key>end</key>
-			<string>\b(do).*$</string>
+			<string>$</string>
+			<key>name</key>
+			<string>source.ruby.capfile.variable</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>task</string>
+			<key>end</key>
+			<string>(do)|({)</string>
 			<key>endCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.start-block.ruby.rspec</string>
+					<string>keyword.control.ruby</string>
 				</dict>
 			</dict>
 			<key>name</key>
-			<string>meta.activerecord.schema.create-table</string>
+			<string>source.ruby.capfile.task</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -108,8 +115,8 @@
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.ruby.rails.schema</string>
+	<string>source.ruby.capfile</string>
 	<key>uuid</key>
-	<string>1676D27A-49ED-416E-8EC2-E2892FF4AC21</string>
+	<string>500D9D8D-AB9C-4609-ADCC-D5647555D116</string>
 </dict>
 </plist>

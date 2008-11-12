@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Symbol List: Rakefile tasks</string>
+	<string>Symbol List: Capfile tasks</string>
 	<key>scope</key>
-	<string>source.ruby.rakefile.task, source.ruby.capfile.task</string>
+	<string>source.ruby.capfile.task</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>
@@ -14,6 +14,6 @@
 		<string>s/task[\s:'"(]+(\w+)[\s:'"=)]?(.*)/   task $1/</string>
 	</dict>
 	<key>uuid</key>
-	<string>4CAC0FCE-196D-44D3-BEBC-A3D84E047DB8</string>
+	<string>C8C692F5-CD79-4C69-B1E1-F8FF5E50E78F</string>
 </dict>
 </plist>
